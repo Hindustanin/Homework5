@@ -29,10 +29,10 @@ public class Main {
         System.out.println();
         System.out.println("Задача 3");
 
-        short year = 2021;
-        if (year < 1584) {
-            System.out.println("В " + year + " году понятия 'високосным год' не существовало");
-        } else if (year % 4 == 0 && year % 400 != 0) {
+        short year = 1700;
+        if (year <= 1584) {
+            System.out.println("В " + year + " году понятия 'високосный год' еще не существовало");
+        } else if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
